@@ -1,1 +1,9 @@
+# Ympäristömuuttujat ja salaiset avaimet
 .env
+*.env
+
+# Pythonin väliaikaistiedostot ja virtuaaliympäristöt
+__pycache__/
+*.pyc
+venv/
+.venv/

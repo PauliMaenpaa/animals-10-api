@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animals-10 Image Classification System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Eläintunnistin</h1>
+      <p class="subtitle">
+        Valitse kuva ja anna tekoälyn tunnistaa eläin. Tuetut eläimet: koira,
+        hevonen, norsu, perhonen, kana, kissa, lehmä, lammas, hämähäkki sekä
+        orava.
+      </p>
+
+      <label class="file-label" for="imageInput">Valitse kuva</label>
+      <input type="file" id="imageInput" accept="image/*" />
+
+      <div class="preview-container">
+        <img id="imagePreview" alt="Kuvan esikatselu" />
+      </div>
+
+      <button id="predictBtn" disabled>Tunnista eläin</button>
+
+      <div id="statusMessage" class="status"></div>
+
+      <div id="resultBox" class="result hidden">
+        <h2>Tulos:</h2>
+        <p id="resultText"></p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
