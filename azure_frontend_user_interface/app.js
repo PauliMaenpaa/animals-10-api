@@ -6,7 +6,8 @@ const resultBox = document.getElementById("resultBox");
 const resultText = document.getElementById("resultText");
 
 // paikallisen FastAPI-palvelimen endpoint
-const API_URL = "http://127.0.0.1:8000/predict";
+const API_URL =
+  "https://azure-luokittelija-webapp-akcfepaafaaxf8c9.swedencentral-01.azurewebsites.net/predict";
 
 let selectedFile = null;
 
